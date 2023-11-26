@@ -1,0 +1,32 @@
+void main() {
+  List<int> finalNumbers = [1, 8, 3, 3, 4, 45, 5, 69, 10, 39, 91, 10];
+
+  int maxNumber = finalNumbers[0];
+  int minNumber = finalNumbers[0];
+  int sum = 0;
+
+  for (int i = 0; i < finalNumbers.length; i++) {
+    int number = finalNumbers[i];
+    
+    // Find the maximum number
+    if (number > maxNumber) {
+      maxNumber = number;
+    }
+
+    // Find the minimum number
+    if (number < minNumber) {
+      minNumber = number;
+    }
+
+    // Calculate the sum
+    sum += number;
+  }
+
+  // Calculate the average
+  double average = sum.toDouble() / finalNumbers.length;
+
+  print('Maximum number in the list: $maxNumber');
+  print('Minimum number in the list: $minNumber');
+  print('Sum of all numbers in the list: $sum');
+  print('Average of all numbers in the list: $average');
+}
