@@ -7,7 +7,7 @@ void main() {
 
   for (int i = 0; i < finalNumbers.length; i++) {
     int number = finalNumbers[i];
-    
+
     // Find the maximum number
     if (number > maxNumber) {
       maxNumber = number;
